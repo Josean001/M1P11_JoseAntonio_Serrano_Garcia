@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!-- PRACTICA 11 -->
+        <meta name="copyright" content="© Jose Antonio Serrano García">
+        <!-- Autor -->
+        <meta name="author" content="Jose Antonio Serrano García">
+        <!-- Descripción -->
+        <meta name="description" content="Practica 11 de HTML">
+        <!-- Palabras claves -->
+        <meta name="keywords" content="practica,11,jose,developer">
+        <!-- Modelo de cifrado -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Titulo del la página web -->
+        <title>Práctica 11</title>
+    </head>
+    <body>
+        <h1>Práctica 11</h1>
+        <!-- Creación del formulario en que se envia correo electronico. -->
+        <form action="https://formsubmit.co/joseantoniosegarr@gmail.com" method="POST">
+            <!-- Datos del formulario: Registro de usuarios -->
+             <fieldset>
+                    <legend>Registro de usuarios:</legend>
+                    <!-- Info de Nombre -->
+                    <label for="nombre">Nombre (Requerido):</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <br>
+                    <!-- Info de Genero -->
+                    <label for="genero">Genero:</label>
+                    <select id="genero" name="genero">
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                    </select>
+                    <br>
+
+                    <!-- Info de Fecha de Nacimiento -->
+                    <label for="fecha_de_nacimiento">Fecha de Nacimiento:</label>
+                    <input type="date" id="fecha_de_nacimiento" name="fecha_de_nacimiento">
+                    <br>
+
+                    <!-- Info de Email -->
+                    <label for="email">Email (Requerido):</label>
+                    <input type="email" id="email" name="email" required>
+                    <br>
+
+                    <!-- Info de Contraseñas -->
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password">
+                    <br>
+                    <!-- Info de Nº de asignaturas matriculadas -->
+                    <label for="asignaturas">Número de asignaturas matriculadas (entre 1 y 12):</label>
+                    <input type="number" id="asignaturas" name="asignaturas" min="1" max="12">
+                    <br>
+                    <!-- Curso Matriculado-->
+                    <label for="curso">Curso Matriculado:</label>
+                    <select id="curso" name="curso">
+                        <option value="curso1">Curso 1</option>
+                        <option value="curso2">Curso 2</option>
+                        <option value="curso3">Curso 3</option>
+                        <option value="curso4">Curso 4</option>
+                    </select>
+                    <br>
+                    <!-- Aceptación de condiciones -->
+                    <label>
+                        <input type="checkbox" name="acepta_condiciones" required> Acepto las condiciones
+                    </label>
+                    <br>
+
+                    <!-- Aceptación del registro -->
+                    <label>
+                        <input type="checkbox" name="acepta_registro" required> Acepto el registro
+                    </label>
+                    <br>
+                </fieldset>
+             <!-- Enviar formulario -->
+             <input type="submit" value="Enviar">
+        </form>
+    </body>
+</html>
